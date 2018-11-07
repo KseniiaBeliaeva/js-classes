@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Classes</title>
+</head>
+
+<body>
+    <h1>JavaScript Classes</h1>
+    Classes used to create one or more Objects
+    Class -> Object
+    <ul>
+        Instance Properties:
+        <li>Name</li>
+        <li>Age</li>
+        <li>Height</li>
+    </ul>
+
+    <ul>
+        Instance Methods:
+        <li>Talk</li>
+        <li>Run</li>
+        <li>Jump</li>
+    </ul>
+
+
+
+    <script type="text/javascript">
+        /*class definition */
+        class Rectangle {
+            // constructor is used to setup an object
+            // constructor run when the object is being created
+            constructor(_width, _height, _color) {
+                //this referes to the current object
+                this.width = _width;
+                this.height = _height;
+                this.color = _color;
+            }
+            //Instance method which uses Obj properties to achieve methods
+            getArea() {
+                return this.width * this.height;
+            }
+            printDescription() {
+                console.log(`I am a rectangle of ${this.width} x ${this.height} and I am ${this.color}`);
+            }
+        }
+        let myRectangle1 = new Rectangle(25,25,"red");
+        let myRectangle2 = new Rectangle(40,350,"yellow");
+
+        console.log(myRectangle1.printDescription());  
+    </script>
+
+</body>
+
+</html>
