@@ -22,7 +22,7 @@ class Programmer extends Person {
     }
 
     code() { 
-        console.log(`${this.name} is coding`);
+        // console.log(`${this.name} is coding`);
     }
 }
 
