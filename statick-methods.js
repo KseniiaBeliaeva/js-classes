@@ -14,4 +14,4 @@ class Square {
 
 let square1 = new Square(9);
 let square2 = new Square(9);
-console.log(Square.isValidDimensions(5, 5));
+// console.log(Square.isValidDimensions(5, 5));
